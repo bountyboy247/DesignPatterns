@@ -68,7 +68,15 @@ namespace DesignPatterns.DSAs.DPs
                         if (string.Equals(ss, word))
                         {
                             string remStr = rem.Substring(word.Length, rem.Length - word.Length);
-                            q.Enqueue((remStr, ns +" "+ word));
+                            if(ns.Length == 0)
+                            {
+                                q.Enqueue((remStr,word));
+                            }
+                            else
+                            {
+                                q.Enqueue((remStr, ns + " " + word));
+                            }
+                            
                         }
                     }
                 }
