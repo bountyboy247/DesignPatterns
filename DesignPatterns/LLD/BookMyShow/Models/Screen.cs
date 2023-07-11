@@ -18,6 +18,7 @@ namespace DesignPatterns.LLD.BookMyShow.Models {
             this.theatre = theatre;
         }
         public string getScreenID() => screenID;
+        public List<Seat> getAllSeats() => seats;   
         public void addSeat(Seat seat) {
             this.seats.Add(seat);
         }

@@ -8,5 +8,11 @@ namespace DesignPatterns.LLD.BookMyShow.Models {
     internal class Movie {
         private string movieID;
         private string movieName;
+
+        public Movie(string movieID, string movieName) {
+            this.movieID = movieID;
+            this.movieName = movieName;
+        }
+        public string getMovieID() => movieID;
     }
 }
