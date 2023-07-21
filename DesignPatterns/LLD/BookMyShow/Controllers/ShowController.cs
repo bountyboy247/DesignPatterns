@@ -16,13 +16,13 @@ namespace DesignPatterns.LLD.BookMyShow.Controllers {
         public string createShow(string movieID, string screenID, DateTime startTime, int durationInSeconds) {
             var screen = theatreService.getScreen(screenID);
             var movie = movieService.getMovie(movieID);
-
-            return showService.createShow(movie, screen,startTime, durationInSeconds).getShowID();
+            return "";
+          //  return showService.createShow(movie, screen,startTime, durationInSeconds).getShowID();
         }
         public List<string> getAvailableSeats(string showID) {
-            Show show = showService.getShow(showID);
+            //Show show = showService.getShow(showID);
             //List<Seat>  availableSeats = s
-
+            return null;
         }
     }
 }
