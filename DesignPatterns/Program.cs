@@ -1,3 +1,3 @@
-﻿using DesignPatterns.DSAs.Stacks;
+﻿using DesignPatterns.DSAs.Trees;
 
-AsteroidCollisions ast = new AsteroidCollisions();
+PossibleTrees pt = new PossibleTrees();
